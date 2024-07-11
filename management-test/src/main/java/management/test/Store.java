@@ -1,5 +1,7 @@
 package management.test;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public class Store {
@@ -13,7 +15,14 @@ public class Store {
 
     }
 
-    public void getProduct() {}
+    public ProductDTO getProduct(String productCode2) {
+        for(ProductDTO p : products) {
+            if(p.getProductCode().equals(productCode2)) {
+                return p;
+            }
+        }
+        return null;
+    }
 
     public void setProduct() {}
 
