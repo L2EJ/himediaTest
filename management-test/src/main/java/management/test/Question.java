@@ -36,6 +36,46 @@ public class Question {
      *   저장 -> 발주할 상품 등록
      *   조회 -> 발주 넣은 상품 확인 또는 전체 발주 리스트
      *   수정 -> 발주 넣은 상품 정보 수정 (상품의 개수라던가)
+     *                     System.out.println(" ========== 메뉴 > 3. 발주 상품 수정 ========== ");
+                    System.out.print(" 수정할 상품의 코드를 적어주세요 : ");
+                    String productCode3 = sc.nextLine();
+                    // 상품 코드를 적어서 맞아서 일치하면
+                    // 또 수정을 원하는 번호를 매기기 (이름, 코드, 가격, 개수, 냉동여부)
+                    // 번호 선택 입력 받기
+                    // 수정 원하는 이름 입력 받기
+                    // 수정 완료
+//                    while(true) {
+                        System.out.println();
+                        System.out.println(" ========== 메뉴 > 3. 발주 상품 수정 ========== ");
+                        System.out.println(" 1. 상품 이름 ");
+                        System.out.println(" 2. 상품 코드 ");
+                        System.out.println(" 3. 상품 가격 ");
+                        System.out.println(" 4. 상품 개수 ");
+                        System.out.println(" 5. 상품의 냉동 여부 ");
+                        System.out.println(" ============================================== ");
+                        System.out.println( " 수정을 원하시는 메뉴를 선택 해주세요 : ");
+
+                        int num2 = sc.nextInt();
+                        sc.nextLine();
+
+                        switch(num2) {
+                            case 1: controller.setProduct();
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+                            case 5:
+                                break;
+                            default:
+                                System.out.println();
+                                System.out.println(" 잘못된 입력입니다. ");
+
+                        }
+//                    }
+
      *   삭제 -> 발주 목록에서 삭제
      *
      *   물건 구매 목록? 기각

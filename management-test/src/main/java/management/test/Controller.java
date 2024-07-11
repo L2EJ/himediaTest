@@ -24,10 +24,46 @@ public class Controller {
       }
     }
 
-    public void setProduct() {}
-
-    public void deleteProduct() {}
-
-    public void getAllProduct() {}
+//    public ProductDTO setProduct() {
+//
+//    }
+//
+//
+//    public void setProductName(String productName1, String productCode3) {
+//
+//        ProductDTO product = store.setProductName(productCode3, productName1);
+//        view.displayMessage(" ---------- 상품 이름 수정 완료 ---------- ");
+//    }
+//
+//    public void setProductCode(String productCode4, String productCode3) {
+//
+//        ProductDTO product = store.setProductCode(productCode3, productCode4);
+//        view.displayMessage(" ---------- 상품 코드 수정 완료 ---------- ");
+//    }
+//
+//    public void setPrice(int price1, String productCode3) {
+//
+//        ProductDTO product = store.setPrice(price1, productCode3);
+//        view.displayMessage(" ---------- 상품 가격 수정 완료 ---------- ");
+//
+//    }
+//
+//    public void setProductNumber(int productNumber1, String productCode3) {
+//
+//        ProductDTO product = store.setProductNumber(productNumber1, productCode3);
+//        view.displayMessage(" ---------- 상품 개수 수정 완료 ---------- ");
+//
+//    }
+//
+//    public void setIsFreeze(boolean isFreeze1, String productCode3) {
+//
+//        ProductDTO product = store.setIsFreeze(isFreeze1, productCode3);
+//        view.displayMessage(" ---------- 상품 냉동 여부 수정 완료 ---------- ");
+//
+//    }
+//
+//    public void deleteProduct() {}
+//
+//    public void getAllProduct() {}
 
 }
