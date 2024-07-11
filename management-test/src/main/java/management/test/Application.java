@@ -88,7 +88,6 @@ public class Application {
 
                                 System.out.println();
                                 controller.setProductName(productCode9, productCode3, productName1);
-
                                 break;
                             case 2:
                                 System.out.println();
@@ -100,7 +99,6 @@ public class Application {
 
                                 System.out.println();
                                 controller.setProductCode(productCode9, productCode4, productCode5);
-
                                 break;
                             case 3:
                                 System.out.println();
@@ -112,8 +110,6 @@ public class Application {
 
                                 System.out.println();
                                 controller.setPrice(productCode9, productCode6, price1);
-
-
                                 break;
                             case 4:
                                 System.out.println();
@@ -125,8 +121,6 @@ public class Application {
 
                                 System.out.println();
                                 controller.setProductNumber(productCode9, productCode7, productNumber1);
-
-
                                 break;
                             case 5:
                                 System.out.println();
@@ -138,7 +132,6 @@ public class Application {
 
                                 System.out.println();
                                 controller.setFreeze(isFreeze2, productCode8, productCode9);
-
                                 break;
                             case 0:
                                 System.out.println();
@@ -156,11 +149,17 @@ public class Application {
                     System.out.println();
                     System.out.println(" ========== 메뉴 > 4. 발주 상품 삭제 ========== ");
                     System.out.print(" 삭제할 상품의 코드를 입력해주세요 : ");
+                    String productCode10 = sc.nextLine();
 
-
-
+                    System.out.println();
+                    controller.deleteProduct(productCode10);
                     break;
                 case 5:
+                    System.out.println();
+                    System.out.println(" ========== 메뉴 > 5. 발주 상품 전체 조회 ========== ");
+
+                    controller.getAllProduct();
+                    System.out.println();
                     break;
                 case 0:
                     System.out.println();

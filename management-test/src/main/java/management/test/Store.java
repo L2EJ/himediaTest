@@ -1,6 +1,7 @@
 package management.test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Store {
 
@@ -77,8 +78,18 @@ public class Store {
 
 
 
-    public void deleteProduct() {}
+    public Boolean deleteProduct(String productCode10) {
+        for(ProductDTO p : products) {
+            if(p.getProductCode().equals(productCode10)) {
+                products.remove(p);
+                return true;
+            }
+        }
+        return false;
+    }
 
-    public void getAllProduct() {}
+    public List<ProductDTO> getAllProduct() {
+        return products;
+    }
 
 }

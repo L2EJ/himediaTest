@@ -27,7 +27,7 @@ public class Controller {
 
     public void setProductName(String productCode9, String productCode3, String productName1) {
 
-        ProductDTO product = store.setProductName(productCode9, productCode3, productName1);
+        ProductDTO isSuccess = store.setProductName(productCode9, productCode3, productName1);
         view.displayMessage(" ---------- 상품 이름 수정 완료 ---------- ");
     }
 
@@ -59,8 +59,18 @@ public class Controller {
     }
 
 
-    public void deleteProduct() {}
+    public void deleteProduct(String productCode10) {
 
-    public void getAllProduct() {}
+        Boolean isDeleteSuccess = store.deleteProduct(productCode10);
+        if(isDeleteSuccess) {
+        view.displayMessage(" ---------- 상품 삭제 완료 ---------- ");
+        } else {
+            view.displayMessage(" ---------- 상품 삭제 실패 ---------- ");
+        }
+    }
+
+    public void getAllProduct() {
+        view.displayProductList(store.getAllProduct());
+    }
 
 }
