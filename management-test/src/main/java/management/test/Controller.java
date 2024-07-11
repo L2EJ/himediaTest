@@ -24,46 +24,43 @@ public class Controller {
       }
     }
 
-//    public ProductDTO setProduct() {
-//
-//    }
-//
-//
-//    public void setProductName(String productName1, String productCode3) {
-//
-//        ProductDTO product = store.setProductName(productCode3, productName1);
-//        view.displayMessage(" ---------- 상품 이름 수정 완료 ---------- ");
-//    }
-//
-//    public void setProductCode(String productCode4, String productCode3) {
-//
-//        ProductDTO product = store.setProductCode(productCode3, productCode4);
-//        view.displayMessage(" ---------- 상품 코드 수정 완료 ---------- ");
-//    }
-//
-//    public void setPrice(int price1, String productCode3) {
-//
-//        ProductDTO product = store.setPrice(price1, productCode3);
-//        view.displayMessage(" ---------- 상품 가격 수정 완료 ---------- ");
-//
-//    }
-//
-//    public void setProductNumber(int productNumber1, String productCode3) {
-//
-//        ProductDTO product = store.setProductNumber(productNumber1, productCode3);
-//        view.displayMessage(" ---------- 상품 개수 수정 완료 ---------- ");
-//
-//    }
-//
-//    public void setIsFreeze(boolean isFreeze1, String productCode3) {
-//
-//        ProductDTO product = store.setIsFreeze(isFreeze1, productCode3);
-//        view.displayMessage(" ---------- 상품 냉동 여부 수정 완료 ---------- ");
-//
-//    }
-//
-//    public void deleteProduct() {}
-//
-//    public void getAllProduct() {}
+
+    public void setProductName(String productCode9, String productCode3, String productName1) {
+
+        ProductDTO product = store.setProductName(productCode9, productCode3, productName1);
+        view.displayMessage(" ---------- 상품 이름 수정 완료 ---------- ");
+    }
+
+    public void setProductCode(String productCode9, String productCode4, String productCode5) {
+
+        ProductDTO product = store.setProductCode(productCode9, productCode4, productCode5);
+        view.displayMessage(" ---------- 상품 코드 수정 완료 ---------- ");
+    }
+
+    public void setPrice(String productCode9, String productCode6, int price1) {
+
+        ProductDTO product = store.setPrice(productCode9, productCode6, price1);
+        view.displayMessage(" ---------- 상품 가격 수정 완료 ---------- ");
+
+    }
+
+    public void setProductNumber(String productCode9, String productCode7, int productNumber1) {
+
+        ProductDTO product = store.setProductNumber(productCode9, productCode7, productNumber1);
+        view.displayMessage(" ---------- 상품 개수 수정 완료 ---------- ");
+
+    }
+
+    public void setFreeze (boolean isFreeze2, String productCode8, String productCode9) {
+
+        ProductDTO product = store.setFreeze(isFreeze2, productCode8, productCode9);
+        view.displayMessage(" ---------- 상품 냉동 여부 수정 완료 ---------- ");
+
+    }
+
+
+    public void deleteProduct() {}
+
+    public void getAllProduct() {}
 
 }
